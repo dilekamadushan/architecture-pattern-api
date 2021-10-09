@@ -3,6 +3,9 @@
 
 service: my-express-application
 
+plugins:
+  - serverless-offline
+
 
 provider:
 
@@ -23,6 +26,6 @@ functions:
 
     events:
 
-      - http: ANY /
-
-      - http: 'ANY {proxy+}'
+      - http:
+          path: /
+          method: get
