@@ -1,3 +1,3 @@
 ## To start offline
 
-sls offline start --noPrependStageInUrl
+sls offline --httpPort=8000 --noPrependStageInUrl

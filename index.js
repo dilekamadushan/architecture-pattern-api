@@ -19,5 +19,12 @@ app.get('/', (req, res) => {
 
 })
 
+app.post('/', (req, res) => {
+    console.log("Post Request here", JSON.stringify(req.body));
+
+    res.send(JSON.stringify({message:'Post request received'}));
+
+})
+
 
 module.exports.handler = serverless(app);

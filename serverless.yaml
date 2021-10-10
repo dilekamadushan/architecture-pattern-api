@@ -28,4 +28,7 @@ functions:
 
       - http:
           path: /
-          method: get
+          method: any
+      - http:
+          path: /*
+          method: any
